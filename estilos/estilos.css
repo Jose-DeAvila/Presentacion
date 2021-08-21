@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Amertha PERSONAL USE ONLY';
+    src: url(../estilos/Amertha_PERSONAL_USE_ONLY.ttf);
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(255, 241, 235, 0.5) 0%, rgba(172, 225, 249, 0.5) 100%), url("https://images.pexels.com/photos/5668863/pexels-photo-5668863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+.tittle{
+    font-family: 'Amertha PERSONAL USE ONLY';
+    font-size: 65px;
+    margin-bottom: 35px;
+}
+.brand{
+    font-family: 'Amertha PERSONAL USE ONLY';
+    font-size: 40px;
+    border: 0px;
+}
+.sub{
+    font-weight: 300;
+    font-size: 22px;
+}
+.information{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+.text{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 110px;
+}
+.arrow{
+    height: 50%;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+.arrow i{
+    font-size: 40px;
+    animation: movimiento 1s infinite;
+    color: #000;
+    transition: .2s ease all;
+}
+
+.arrow a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.arrow a:hover{
+    font-size: 25px;
+    color: #EC524B;
+}
+@keyframes movimiento {
+    0%{
+        transform: translateY(-80%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25vw;
+    height: 100vh;
+    background: rgba(98, 112, 221, 0.555);
+    transition: transform .3s ease-in-out; 
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); 
+}
+
+.show{
+    transform: translate(0);
+}
+.close{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
+.close:hover{
+    width: 37px;
+    height: 27px;
+    color: #fff;
+}
+.navbar ul{
+    height: 100%;
+    padding: 0 50px;
+    border-left: 1px solid #ccc;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar ul li{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: #ccc solid 1px;
+    padding-bottom: 20px;
+}
+.navbar ul li:last-child,.navbar ul li:first-child {
+    border-bottom: 0;
+}
+.navbar ul li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+}
+.navbar ul a i{
+    font-size: 25px;
+    margin-right: 10px;
+    color:#EC524B;
+}
+.users img{
+    width: 70px;
+    position: absolute;
+    border-radius: 50%;
+}
+.user1{
+    left: 30px;
+    bottom: 22px;
+}
+.user2{
+    left: 110px;
+    bottom: 22px;
+}
+.user3{
+    left: 190px;
+    bottom: 22px;
+}
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.sp1{
+    height: 100vh;
+    font-family:'Amertha PERSONAL USE ONLY' ;
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+
+
