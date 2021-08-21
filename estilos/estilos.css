@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
 }
 
 .header{
@@ -16,21 +17,26 @@ body{
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    position: relative;
 }
+
 .tittle{
     font-family: 'Amertha PERSONAL USE ONLY';
     font-size: 65px;
     margin-bottom: 35px;
 }
+
 .brand{
     font-family: 'Amertha PERSONAL USE ONLY';
     font-size: 40px;
     border: 0px;
 }
+
 .sub{
     font-weight: 300;
     font-size: 22px;
 }
+
 .information{
     height: 100%;
     display: flex;
@@ -40,20 +46,23 @@ body{
     text-align: center;
     padding: 0;
 }
+
 .text{
     width: 50%;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 110px;
 }
+
 .arrow{
     height: 50%;
     justify-content: flex-end;
     padding-bottom: 30px;
 }
+
 .arrow i{
     font-size: 40px;
-    animation: movimiento 1s infinite;
+    animation: movimiento cubic-bezier(0.95, 0.05, 0.795, 0.035) .8s infinite alternate;
     color: #000;
     transition: .2s ease all;
 }
@@ -62,11 +71,14 @@ body{
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    transition: .4s ease font-size;
 }
+
 .arrow a:hover{
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #EC524B;
 }
+
 @keyframes movimiento {
     0%{
         transform: translateY(-80%);
@@ -92,7 +104,7 @@ body{
     height: 100vh;
     background: rgba(98, 112, 221, 0.555);
     transition: transform .3s ease-in-out; 
-    transform: translate(110%);
+    transform: translate(150%);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); 
 }
 
@@ -150,24 +162,76 @@ body{
     margin-right: 10px;
     color:#EC524B;
 }
-.users img{
-    width: 70px;
+.users {
     position: absolute;
-    border-radius: 50%;
-}
-.user1{
-    left: 30px;
-    bottom: 22px;
-}
-.user2{
-    left: 110px;
-    bottom: 22px;
-}
-.user3{
-    left: 190px;
-    bottom: 22px;
+    bottom: 0;
+    display: inline-block;
+    margin-left: 20px;
 }
 
+.users .users__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    gap: 15px;
+}
+
+.users__list .users__user {
+    border-radius: 50%;
+}
+
+.users__user .user__info {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgba(98, 112, 221, 1);
+    color: white;
+    padding: 10px 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    opacity: 0;
+    width: 0;
+    transition: .4s ease all;
+    position: absolute;
+    bottom: 110%;
+}
+
+.users__user .user__info::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-color: rgba(98, 112, 221, 1) transparent transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top: 100%;
+    left: 42px;
+}
+
+.users__user:hover .user__info {
+    opacity: 1;
+    width: 100%;
+}
+
+.users__user .user__info span:first-child {
+    color: black;
+    font-weight: 900;
+}
+
+.users__user .user__info span:last-child {
+    color: black;
+    font-weight: 500;
+}
+
+
+.users__user .user__image {
+    width: 100px;
+    min-width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
 
 main{
     width: 90%;
