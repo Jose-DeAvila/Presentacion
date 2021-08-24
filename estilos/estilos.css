@@ -3,8 +3,9 @@
     src: url(../estilos/Amertha_PERSONAL_USE_ONLY.ttf);
 }
 
-body{
+html{
     font-family: 'Roboto Slab', serif;
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -95,6 +96,7 @@ body{
     width: 35px;
     height: 25px;
     cursor: pointer;
+    z-index: 1;
 }
 .navbar{
     position: fixed;
@@ -106,8 +108,11 @@ body{
     transition: transform .3s ease-in-out; 
     transform: translate(150%);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); 
+    z-index: 999999;
 }
-
+.navbar .brand{
+    margin-left: 90px;
+}
 .show{
     transform: translate(0);
 }
@@ -139,7 +144,7 @@ body{
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     border-bottom: #ccc solid 1px;
     padding-bottom: 20px;
@@ -183,9 +188,9 @@ body{
 }
 
 .users__user .user__info {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    background-color: rgba(98, 112, 221, 1);
+    background-color: rgba(98, 112, 221, 0.5);
     color: white;
     padding: 10px 5px;
     white-space: nowrap;
@@ -202,7 +207,7 @@ body{
     width: 0;
     height: 0;
     border-width: 8px;
-    border-color: rgba(98, 112, 221, 1) transparent transparent transparent;
+    border-color: rgba(98, 112, 221, 0.5) transparent transparent transparent;
     border-style: solid;
     position: absolute;
     top: 100%;
@@ -233,16 +238,243 @@ body{
     position: relative;
 }
 
-main{
+.main{
+    /* clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 0);
+    background: rgba(172, 225, 249, 0.5); */
+}
+.container{
+    height: 100vh;
+    padding-top: 5px;
     width: 90%;
     margin: 0 auto;
 }
-.sp1{
-    height: 100vh;
+.container__tittle{
     font-family:'Amertha PERSONAL USE ONLY' ;
-    font-size: 25px;
-    padding-top: 40px;
+    font-size: 42px;
+    height: 10vh;
+    color: #EC524B;
 }
+.container__info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+
+}
+.container__info img{
+    height: 100%;
+}
+
+.info__primary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+}
+.container__info p{
+    max-width: 450px;
+    font-size: 18px;
+    background: rgba(98, 112, 221, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 350;
+}
+
+.container__info p b{
+    font-weight: bolder;
+    color: #EC524B ;
+}
+
+.info__primary img{
+    border-radius: 50%;
+    width: 210px;
+    margin-bottom: 20px;
+    height: 38%;
+}
+
+.definition{
+    margin-right: 25px;
+}
+.definition .container__info p{
+    padding: 30px;
+}
+
+.box{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    width: 28%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    height: 70vh;
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card img{
+    height: 210px;
+    width: 100%;
+    margin: 0 auto;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-4%);
+    
+}
+.card figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(98, 112, 221, 0.5);
+    height: 20vh;
+    padding: 10px;
+    gap: 12px;
+}
+
+.card__tittle{
+    color: #EC524B;
+    text-align: center;
+    font-weight: bolder;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+figure .brand{
+    margin-top: 30px;
+}
+
+.card__enlace{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10%;
+    background: rgba(98, 112, 221, 0.8);
+    color: #fff;
+}
+.card__enlace:hover{
+    background: rgba(98, 112, 221);
+}
+.means .box{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.means__recurso{
+    width: 25%;
+    height: 80vh;
+}
+.means__recurso img {
+    width: 100%;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72%;
+    height: 80vh;
+    list-style: none;
+}
+.list__item{  
+    width: 45%; 
+}
+
+.list__item .img{
+    width: 70%;
+    height: 270px;
+    object-fit: contain;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #EC524B;
+}
+
+.list__item figcaption{
+    margin-top: 45px;
+    font-size: 18px;
+}
+
+.example__card{
+    width: 32%;
+    overflow: hidden;
+}
+
+.example__card img{
+    height: 240px;
+    width: 100%;
+    margin: 0 auto;
+}
+.card__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(147px);
+    transition: all .2s ease;
+    border-radius: 10px;
+    border: 1px solid #EC524B;
+}
+.card__top:hover{
+    transform: translateY(0px);
+}
+.card__bottom{
+    background: rgba(98, 112, 221, 0.5);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card__bottom h5{
+    margin-top: 55px;
+    color: #EC524B;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer{
+    background: rgba(107, 114, 168, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #000;
+}
+.footer p{
+    padding: 10px 0;
+}
+.footer__ul{
+    background: rgba(98, 112, 221, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.ul__item img{
+    width: 95px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+.ul__item p{
+    text-align: center;
+}
+.ul__item p b{
+    color: #EC524B;
+}
+
+
 
 
 

@@ -14,10 +14,7 @@
     />
     <title>Presentación</title>
     <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;500;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -41,16 +38,16 @@
             <a href="#inicio"><i class="fas fa-home"></i>Inicio</a>
           </li>
           <li>
-            <a href="#autores"><i class="fas fa-users"></i>Autores</a>
-          </li>
-          <li>
             <a href="#proyecto"><i class="fas fa-briefcase"></i>Proyecto</a>
           </li>
           <li>
-            <a href="#definicion"><i class="fas fa-atlas"></i>Definición</a>
+            <a href="#definicion"><i class="fas fa-atlas"></i>Problemática</a>
           </li>
           <li>
             <a href="#clientes"><i class="fas fa-user-nurse"></i>Clientes</a>
+          </li>
+          <li>
+            <a href="#recursos"><i class="fas fa-atlas"></i>Recursos</a>
           </li>
           <li>
             <a href="#ejemplos"><i class="far fa-eye"></i>Benchmarking</a>
@@ -64,7 +61,7 @@
         </div>
         <div class="information arrow">
           <i class="fas fa-chevron-down"></i>
-          <a href="">Explorar</a>
+          <a href="#proyecto">Explorar</a>
         </div>
       </section>
       <section class="users">
@@ -72,32 +69,32 @@
           <li class="users__user">
             <p class="user__info">
               <span>Jesus Camilo Toledo Rangel</span>
-              <span>jrangel.ctg@gmail.com - 3015406455</span>
+              <span>jctoldeo.ctg@gmail.com - 3127138941</span>
             </p>
             <img
-              src="./imagenes/user (1).jpeg"
+              src="./imagenes/user (1).png"
               alt="user1"
               class="user__image"
             />
           </li>
           <li class="users__user">
             <p class="user__info">
-              <span>Jesus Camilo Toledo Rangel</span>
-              <span>jrangel.ctg@gmail.com - 3015406455</span>
+              <span>Pedro Manuel Agames Rocha</span>
+              <span>pmagames.ctg@gmail.com - 3003855478</span>
             </p>
             <img
-              src="./imagenes/user (2).jpeg"
+              src="./imagenes/user (3).png"
               alt="user2"
               class="user__image"
             />
           </li>
           <li class="users__user">
             <p class="user__info">
-              <span>Jesus Camilo Toledo Rangel</span>
-              <span>jrangel.ctg@gmail.com - 3015406455</span>
+              <span>Julian Guillermo Gómez Carmona</span>
+              <span>jggomez.ctg@gmail.com - 3015406455</span>
             </p>
             <img
-              src="./imagenes/user (3).jpeg"
+              src="./imagenes/user (2).png"
               alt="user3"
               class="user__image"
             />
@@ -105,23 +102,146 @@
         </ul>
       </section>
     </header>
-    <main class="container">
-      <section class="sp1" id="proyecto">
-        <h2>Descripcion del proyecto</h2>
+    <main class="main">
+      <section class="container project" id="proyecto">
+        <h2 class="container__tittle">¿Qué es SaludApp?</h2>
+        <div class="container__info">
+            <img src="imagenes/ilustration (1).png" alt="ilustration1">
+            <div class="info__primary">
+              <img src="imagenes/logo.jpeg" alt="">
+              <p> <b>SaludApp</b> es una aplicación web la cual tiene como objetivo mejorar el proceso de  <b>agendamiento</b> de citas médicas, en la cual lo usuarios podrán apartar encuentros medicos y llevar un <b>control</b> de estos, junto con su historial clínico más reciente.
+              <br>Contendrá secciones de agendamiento de citas, encuentros pendientes, información sobre resultados de laboratorio y un apartado donde el usuario pueda encontrar <b>contenido</b> acerca del sector salud local<br>
+              <br>Implementaremos un sistema de <b>notificación y alerta de eventos</b> para recordar al usuario su compromiso </p>
+            </div>
+        </div>
       </section>
-      <section class="sp1" id="definicion">
-        <h2>Definicion</h2>
+      <section class="container definition" id="definicion">
+        <h2 class="container__tittle">Problemática</h2>
+        <div class="container__info">
+            <img src="imagenes/ilustration (2).jpeg" alt="ilustration2">
+            <p>El proceso de <b>comunicación</b> usuario-eps a nivel distrital e incluso en toda la población <b>nacional</b>, es una de las principales problemáticas a nivel de <b>agendamiento de citas</b> médicas y <b> control médico</b>, el cual se ha convertido en un proceso tedioso para los <b>usuarios</b>, la toma de dichas citas médicas por vía de llamada telefónica cada vez es <b>menos efectiva</b> ya que por lo general, últimamente nunca son contestadas, del mismo modo el covid-19 ha afectado la toma de estas presencialmente, es por esto que la <b>salud</b> de algunas personas se ven afectadas al no lograr contactar con la eps. </p>
+            <img src="imagenes/ilustration (3).jpeg" alt="ilustration3">
+        </div>
       </section>
-      <section class="sp1" id="clientes">
-        <h2>clientes</h2>
+      <section class="container customers" id="clientes">
+        <h2 class="container__tittle">Principales clientes</h2>
+        
+        <div class="box">
+          <div class="card">
+            <figure>
+              <img src="imagenes/card1.jpg" alt="eps">
+              <figcaption>
+                <h3 class="card__tittle">EPS</h3>
+                <P>Encargada de promover la afiliación al sistema de seguridad social. Sólo administrativo y comercial.</P>
+                <a class="card__enlace" href="http://cms.coomeva.com.co/publicaciones.php?id=31690" target="blank">Leer más</a>
+              </figcaption>
+              <span class="brand">SaludApp</span>
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="imagenes/card2.jpg" alt="eps">
+              <figcaption>
+                <h3 class="card__tittle">Hospitales (IPS)</h3>
+                <P>Todos los centros, clínicas y hospitales donde se prestan los servicios médicos, bien sea de urgencia o de consulta.</P>
+                <a class="card__enlace" href="http://cms.coomeva.com.co/publicaciones.php?id=31690" target="blank">Leer más</a>
+              </figcaption>
+              <span class="brand">SaludApp</span>
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="imagenes/card3.jpg" alt="eps">
+              <figcaption>
+                <h3 class="card__tittle">Consultorios independientes</h3>
+                <P>Médicos independientes. Los consultorios independientes y el poder de la atención centrada en el paciente.</P>
+                <a class="card__enlace" href="https://coopervisionlatam.com/practitioner/desarrollo-de-consultorios/estudios-de-caso/el-poder-de-la-atencion-centrada-en-el-paciente" target="blank">Leer más</a>
+              </figcaption>
+              <span class="brand">SaludApp</span>
+            </figure>
+          </div>
+        </div>
       </section>
-      <section class="sp1" id="ejemplos">
-        <h2>Benchmarking</h2>
+      <section class="container means" id="recursos">
+        <h2 class="container__tittle">Recursos necesarios</h2>
+        <div class="box">
+          <img src="imagenes/copia.png" alt="recursos" class="means__recurso">
+        
+          <ul class="list">
+          <li class="list__item">
+            <figure>
+            <img src="imagenes/recurso1.png" alt="servidores" class="img">
+            <figcaption>
+              <p>Servidores donde vamos a subir el backend </p>
+            </figcaption>
+            </figure>
+          </li>
+          <li class="list__item">
+            <figure>
+              <img src="imagenes/recurso2.png" alt="computacion nube" class="img">
+              <figcaption>
+                <p>Servicios de computación en la nube</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        </div>
       </section>
-      <section class="sp1" id="autores">
-        <h2>Autores</h2>
+      <section class="container examples" id="ejemplos">
+        <h2 class="container__tittle">Benchmarking</h2>
+
+        <div class="box">
+          <div class="example__card">
+            <div class="card__top">
+              <img src="imagenes/ejemplo1.jpg" alt="ejemplo2">
+            </div>
+            <div class="card__bottom">
+              <p>Nuestra idea del producto es similar a esta, pero mejoramos falencias que tiene y que podemos notar en sus valoraciones: no tiene atención personalizada para el usuario, funciones muy limitadas e inestables.</p>
+              <h5>Zona SER</h5>
+            </div>
+          </div>
+          <div class="example__card">
+            <div class="card__top">
+              <img src="imagenes/ejemplo2.jpg" alt="ejemplo2">
+            </div>
+            <div class="card__bottom">
+              <p>Las falencias llegan en la experiencia de usuario y cómo se entorpece ya que no cuenta con
+                las funciones que necesita el usuario en el momento y donde es, es decir, Las respuestas tienen que ser rápidas y a tiempo real. </p>
+              <h5>Salud Total EPS-S</h5>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+        <p>&copy Derechos Reservados <br> &#128073 web development &#128072</p>
+        <ul class="footer__ul">
+          <li class="ul__item">
+            <figure>
+              <img src="imagenes/user (1).png" alt="">
+              <figcaption>
+                <p><b>Jesus Toledo Rangel</b><br>jctoledo.ctg@...<br> Ing. Informática VI</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="ul__item">
+            <figure>
+              <img src="imagenes/user (3).png" alt="">
+              <figcaption>
+                <p><b>Pedro Agames Rocha</b> <br>pmagames.ctg@...</br> Ing. Informática VI</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="ul__item">
+            <figure>
+              <img src="imagenes/user (2).png" alt="">
+              <figcaption> 
+                <p><b>Julian Gómez Carmona </b><br> jggomez.ctg@...<br> Ing. Informática VI</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+    </footer>
     <script src="/main.js"></script>
   </body>
 </html>
